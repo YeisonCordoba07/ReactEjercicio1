@@ -10,7 +10,7 @@ const BarraProgreso = ({nombre, porcentaje}:EntradasBarraProgreso) =>{
     return(
         <div className="flex flex-col w-full">
 
-            <TextoInformacion nombreInfo={nombre} valorInfo={porcentaje}/>
+            <TextoInformacion className="texto-normal-gris"nombreInfo={nombre} valorInfo={porcentaje}/>
 
             <progress className="w-full" id="file" max="100" value={porcentaje}>{porcentaje}</progress>
 

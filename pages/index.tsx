@@ -2,18 +2,20 @@
 import Image from 'next/image';
 import {ImFacebook, ImLinkedin2, ImYoutube, ImDribbble} from 'react-icons/im';
 import {BsInstagram, BsTwitter} from 'react-icons/bs';
+import {PiIntersectSquareFill} from "react-icons/pi";
 
 //Componentes
 import {BotonRedes} from '@/componentes/BotonRedes';
 import {TextoInformacion} from '@/componentes/TextoInformacion';
 import { BarraProgreso } from '@/componentes/BarraProgreso';
+import { Habilidades } from '@/componentes/Habilidades';
 
 
 const Index = () => {
   return (
-    <main className='flex'>
+    <main className='flex gap-7 bg-slate-200'>
 
-      <aside className='debug w-80 px-10'>
+      <aside className='w-80 px-10 bg-white'>
 
         <div className='flex flex-col items-center separacion-section-info'>
           <Image className='rounded-full' 
@@ -28,7 +30,7 @@ const Index = () => {
 
         <div className="flex flex-col items-center separacion-section-info w-full">
 
-          <TextoInformacion nombreInfo='Age:' valorInfo='24'/>
+          <TextoInformacion  nombreInfo='Age:' valorInfo='24'/>
           <TextoInformacion nombreInfo='Residence:' valorInfo='BD'/>
           <TextoInformacion nombreInfo='Freelance' valorInfo='Available'/>
           <TextoInformacion nombreInfo='Address:' valorInfo='Dhaka,Bangladesh'/>
@@ -55,19 +57,56 @@ const Index = () => {
 
         </div>
 
-        <div>
+        <div className='flex flex-col separacion-section-info w-full'>
           <span className='titulos-informacion'>Extra Skills</span>
+
+          <Habilidades Icono={PiIntersectSquareFill} texto="Boostrap, Materialize"/>
+          <Habilidades Icono={PiIntersectSquareFill} texto="Stylus, Sass, Less"/>
+          <Habilidades Icono={PiIntersectSquareFill} texto="Gulp, Webpack, Grunt"/>
+          <Habilidades Icono={PiIntersectSquareFill} texto="GIT Knowledge"/>
+
         </div>
 
       </aside>
 
-      <section className='debug w-2/3'>
 
 
 
+
+
+<section className="debug w-3/5">
+      <div className="gap-9 flex flex-row bg-white rounded-sm">
+
+        <div className="flex flex-col gap-9 w-2/3 p-11">
+
+
+        <h1 className="text-5xl font-bold">I'm Yeison Cordoba <span className='text-amber-500 font-bold'>Front-end</span> Developer</h1>
+
+        <p className="texto-normal-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+
+        <button className="bg-amber-500 w-40 h-14 rounded-md text-xl font-medium">HIRE ME </button>
+
+
+
+        </div>
+
+        <Image className='h-2/5' 
+                  src='/YeisonIA.png' 
+                  height={450} 
+                  width={450} 
+                  alt='Foto de perfil'/>
+
+
+      </div>
       </section>
 
-      <aside className='debug w-24 flex flex-col items-center pt-20'>
+
+
+
+
+
+
+      <aside className='w-24 flex flex-col items-center pt-20 bg-white'>
 
         <span className='mb-4 text-lg font-bold'>Links</span>
 

@@ -20,11 +20,11 @@
 }
 
 .texto-normal-gris{
-  @apply font-normal text-sm text-slate-500;
+  @apply font-normal text-xl text-slate-500;
 }
 
 .texto-normal-negro{
-  @apply font-normal text-base;
+  @apply font-normal text-xl;
 }
 
 .separacion-section-info{
@@ -32,5 +32,5 @@
 }
 
 .titulos-informacion{
-  @apply font-medium text-xl;
+  @apply font-medium text-2xl;
 }
