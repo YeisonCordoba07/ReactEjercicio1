@@ -2,13 +2,18 @@ import { IconType } from "react-icons";
 
 interface ButtonProps {
     Icono: IconType;
+    enlace: string;
+    colorFondo?: string;
   }
   
-  const BotonRedes = ({ Icono }: ButtonProps) => {
+  const BotonRedes = ({ Icono, enlace, colorFondo }: ButtonProps) => {
+    const fondo = colorFondo ? { backgroundColor: colorFondo } : {};
     return (
-      <button className='rounded-full px-15 py-15' >
-        <Icono />
-      </button>
+
+        <div className='fondo-redes' style={fondo}>
+          <a href={enlace}><Icono/></a>
+        </div>
+
     );
   };
   

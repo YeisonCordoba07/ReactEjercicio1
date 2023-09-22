@@ -54,14 +54,30 @@ const Index = () => {
         <span className='mb-4 text-lg font-bold'>Links</span>
 
         <ul className='flex flex-col justify-center gap-4'>
-          
-          <li className='fondo-redes bg-blue-500' ><a href='#'><ImFacebook/></a></li>
-          <li className='fondo-redes bg-fuchsia-300'><a href='#'><BsInstagram/></a></li>
-          <li className='fondo-redes bg-sky-400'><a href='#'><BsTwitter/></a></li>
-          <li className='fondo-redes bg-cyan-700'><a href='#'><ImLinkedin2/></a></li>
-          <li className='fondo-redes bg-red-600'><a href='#'><ImYoutube/></a></li>
-          <li className='fondo-redes bg-orange-500'><a href='#'><ImDribbble/></a></li> 
-          <li className='fondo-redes'><a  ><BotonRedes Icono={ImFacebook}/> </a></li> 
+
+          <li>
+            <BotonRedes Icono={ImFacebook} enlace='#' colorFondo='rgb(59 130 246)'/>
+          </li>
+
+          <li>
+            <BotonRedes Icono={BsInstagram} enlace='#' colorFondo='rgb(240 171 252)'/>
+          </li>
+
+          <li>
+            <BotonRedes Icono={BsTwitter} enlace='#' colorFondo='rgb(56 189 248)'/>
+          </li>
+
+          <li>
+            <BotonRedes Icono={ImLinkedin2} enlace='#' colorFondo='rgb(14 116 144)'/>
+          </li>
+
+          <li>
+            <BotonRedes Icono={ImYoutube} enlace='#' colorFondo='rgb(220 38 38)'/>
+          </li>
+
+          <li>
+            <BotonRedes Icono={ImDribbble} enlace='#' colorFondo='rgb(249 115 22)'/>
+          </li>
             
         </ul>
 

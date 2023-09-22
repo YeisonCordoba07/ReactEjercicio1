@@ -8,7 +8,7 @@
 }
 
 .fondo-redes{
-  @apply rounded-full flex justify-center items-center w-12 h-12;
+  @apply rounded-full flex justify-center items-center w-12 h-12 ;
 }
 
 .texto-normal-gris{
