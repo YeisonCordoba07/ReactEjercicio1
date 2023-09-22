@@ -35,7 +35,7 @@ const Index = () => {
 
         </div>
 
-        <div className="flex flex-col items-center w-full separacion-section-info">
+        <div className="flex flex-col justify-between w-full separacion-section-info">
 
           <span className='titulos-informacion'>Languages</span>
           <BarraProgreso nombre="Bangla" porcentaje="100"/>
@@ -44,7 +44,7 @@ const Index = () => {
           
         </div>
 
-        <div className="flex flex-col items-center w-full separacion-section-info">
+        <div className="flex flex-col w-full separacion-section-info">
 
           <span className='titulos-informacion'>Programming Languages</span>
           <BarraProgreso nombre="Html" porcentaje="90"/>
