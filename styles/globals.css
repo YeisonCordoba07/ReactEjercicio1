@@ -4,11 +4,15 @@
 
 
 .debug{
-  border-style: solid;
-  border-color:red;
-  color: red;
+  @apply bg-red-200 border-solid border-2 border-red-500
 }
 
 .fondo-redes{
-  @apply rounded-full px-3 py-3 w-10 h-10 my-3;
+  @apply rounded-full flex justify-center items-center w-12 h-12;
+}
+
+.texto-normal-gris{
+  @apply font-normal text-sm text-slate-500;
+
+
 }
