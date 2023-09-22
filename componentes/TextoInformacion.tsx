@@ -5,8 +5,8 @@ interface EntradasInformacion {
 
 const TextoInformacion = ({nombreInfo, valorInfo}: EntradasInformacion) => {
     return (
-        <div className="flex justify-between">
-            <p className='texto-normal-negro'>{nombreInfo}</p>
+        <div className="flex flex-row justify-between w-full">
+            <p className='texto-normal-negro'>{nombreInfo} </p>
             <p className='texto-normal-negro'>{valorInfo}</p>
         </div>
 

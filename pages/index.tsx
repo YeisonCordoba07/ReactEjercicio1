@@ -6,6 +6,7 @@ import {BsInstagram, BsTwitter} from 'react-icons/bs';
 //Componentes
 import {BotonRedes} from '@/componentes/BotonRedes';
 import {TextoInformacion} from '@/componentes/TextoInformacion';
+import { BarraProgreso } from '@/componentes/BarraProgreso';
 
 
 const Index = () => {
@@ -25,7 +26,7 @@ const Index = () => {
           <p className='texto-normal-gris'>Front-End Developer</p>
         </div>
 
-        <div className="flex flex-col separacion-section-info">
+        <div className="flex flex-col items-center separacion-section-info w-full">
 
           <TextoInformacion nombreInfo='Age:' valorInfo='24'/>
           <TextoInformacion nombreInfo='Residence:' valorInfo='BD'/>
@@ -34,18 +35,28 @@ const Index = () => {
 
         </div>
 
-        <div>
-          <span>Languages</span>
+        <div className="flex flex-col items-center w-full separacion-section-info">
+
+          <span className='titulos-informacion'>Languages</span>
+          <BarraProgreso nombre="Bangla" porcentaje="100"/>
+          <BarraProgreso nombre="English" porcentaje="80"/>
+          <BarraProgreso nombre="Spanish" porcentaje="60"/>
+          
+        </div>
+
+        <div className="flex flex-col items-center w-full separacion-section-info">
+
+          <span className='titulos-informacion'>Programming Languages</span>
+          <BarraProgreso nombre="Html" porcentaje="90"/>
+          <BarraProgreso nombre="CSS" porcentaje="85"/>
+          <BarraProgreso nombre="Js" porcentaje="80"/>
+          <BarraProgreso nombre="PHP" porcentaje="75"/>
+          <BarraProgreso nombre="WordPress" porcentaje="85"/>
 
         </div>
 
         <div>
-          <span>Programming Languages</span>
-
-        </div>
-
-        <div>
-          <span>Extra Skills</span>
+          <span className='titulos-informacion'>Extra Skills</span>
         </div>
 
       </aside>
