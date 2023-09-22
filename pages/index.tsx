@@ -11,6 +11,7 @@ import { Habilidades } from "@/componentes/Habilidades";
 import { EntradasEncabezado } from "@/componentes/Encabezado";
 import { Conocimientos } from "@/componentes/Conocimientos";
 
+
 const Index = () => {
   return (
     <main className="flex gap-7 bg-slate-200">
@@ -44,7 +45,7 @@ const Index = () => {
 
 
 
-        <div className="flex flex-col justify-between w-full separacion-section-info">
+        <div className="flex flex-col w-full  separacion-section-info">
           <span className="titulos-informacion">Languages</span>
           <BarraProgreso nombre="Bangla" porcentaje="100" />
           <BarraProgreso nombre="English" porcentaje="80" />
