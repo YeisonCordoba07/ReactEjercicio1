@@ -13,6 +13,12 @@
 
 .texto-normal-gris{
   @apply font-normal text-sm text-slate-500;
+}
 
+.texto-normal-negro{
+  @apply font-normal text-base;
+}
 
+.separacion-section-info{
+  @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-800;
 }

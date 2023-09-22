@@ -1,9 +1,11 @@
 
+import Image from 'next/image';
 import {ImFacebook, ImLinkedin2, ImYoutube, ImDribbble} from 'react-icons/im';
 import {BsInstagram, BsTwitter} from 'react-icons/bs';
 
+//Componentes
 import {BotonRedes} from '@/componentes/BotonRedes';
-import Image from 'next/image';
+import {TextoInformacion} from '@/componentes/TextoInformacion';
 
 
 const Index = () => {
@@ -12,7 +14,7 @@ const Index = () => {
 
       <aside className='debug w-80 px-10'>
 
-        <div className='flex flex-col items-center gap-3 pt-10 pb-12 border-solid border-b border-gray-200'>
+        <div className='flex flex-col items-center separacion-section-info'>
           <Image className='rounded-full' 
           src='/YeisonIA.png' 
           height={150} 
@@ -23,7 +25,12 @@ const Index = () => {
           <p className='texto-normal-gris'>Front-End Developer</p>
         </div>
 
-        <div>
+        <div className="flex flex-col separacion-section-info">
+
+          <TextoInformacion nombreInfo='Age:' valorInfo='24'/>
+          <TextoInformacion nombreInfo='Residence:' valorInfo='BD'/>
+          <TextoInformacion nombreInfo='Freelance' valorInfo='Available'/>
+          <TextoInformacion nombreInfo='Address:' valorInfo='Dhaka,Bangladesh'/>
 
         </div>
 
