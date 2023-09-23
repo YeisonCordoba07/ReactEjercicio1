@@ -10,6 +10,7 @@ import { BarraProgreso } from "@/componentes/BarraProgreso";
 import { Habilidades } from "@/componentes/Habilidades";
 import { EntradasEncabezado } from "@/componentes/Encabezado";
 import { Conocimientos } from "@/componentes/Conocimientos";
+import { Certificados } from "@/componentes/Certificados";
 
 
 const Index = () => {
@@ -88,7 +89,7 @@ const Index = () => {
 
 
 
-      <section className="debug w-[970px] h-[467]">
+      <section className="w-[970px] h-[467]">
         <div className="gap-9 flex flex-row bg-white rounded-sm">
           <div className="flex flex-col gap-9 w-2/3 p-11">
             <h1 className="text-5xl font-bold">
@@ -125,18 +126,67 @@ const Index = () => {
         </div>
 
 
-<div className="grid debug grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
+      <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
 
-  <Conocimientos rutaImagen="/1-Monitor2.svg" titulo="Web Development" detalles="Blog, R-Commerce"/>
-      
-  <Conocimientos rutaImagen="/2-Monitor-diseno.svg" titulo="UI/UX Design" detalles="Mobile App, Website Design"/>
-  <Conocimientos rutaImagen="/3-Microphone.svg" titulo="Sound Design" detalles="Voice Over, Beat Making"/>
-  <Conocimientos rutaImagen="/4-Diseno.svg" titulo="Game Design" detalles="Character Design, Props & Objects"/>
-  <Conocimientos rutaImagen="/5-Persona.svg" titulo="Photography" detalles="Portrait, Product Photography"/>
-  <Conocimientos titulo="Advertising" detalles="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi"
-  textoBoton="Order by"/>
+        <Conocimientos rutaImagen="/1-Monitor2.svg" titulo="Web Development" detalles="Blog, R-Commerce"/>
+            
+        <Conocimientos rutaImagen="/2-Monitor-diseno.svg" titulo="UI/UX Design" detalles="Mobile App, Website Design"/>
+        <Conocimientos rutaImagen="/3-Microphone.svg" titulo="Sound Design" detalles="Voice Over, Beat Making"/>
+        <Conocimientos rutaImagen="/4-Diseno.svg" titulo="Game Design" detalles="Character Design, Props & Objects"/>
+        <Conocimientos rutaImagen="/5-Persona.svg" titulo="Photography" detalles="Portrait, Product Photography"/>
+        <Conocimientos titulo="Advertising" detalles="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi"
+        textoBoton="Order by"/>
 
-</div>
+      </div>
+
+
+
+      <section>
+
+
+        <div className="py-16 px-64 text-center bg-inherit">
+          <EntradasEncabezado
+            titulo="Education"
+            descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+          />
+        </div>
+
+<section className="flex flex-col px-10 bg-white rounded-sm">
+  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
+
+  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
+
+  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
+
+
+
+</section>
+        
+
+  
+        <div className="py-16 px-64 text-center bg-inherit">
+          <EntradasEncabezado
+            titulo="Portafolio"
+            descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+          />
+        </div>
+
+        <section>
+
+
+          
+        </section>
+
+
+
+
+      </section>
+
+
+
+
+
+
 
 
 
