@@ -32,6 +32,6 @@
   @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-300;
 }
 
-.titulos-informacion{
-  @apply font-medium text-2xl;
+.subtitulos{
+  @apply font-medium text-xl;
 }

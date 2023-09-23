@@ -46,7 +46,7 @@ const Index = () => {
 
 
         <div className="flex flex-col w-full  separacion-section-info">
-          <span className="titulos-informacion">Languages</span>
+          <span className="subtitulos">Languages</span>
           <BarraProgreso nombre="Bangla" porcentaje="100" />
           <BarraProgreso nombre="English" porcentaje="80" />
           <BarraProgreso nombre="Spanish" porcentaje="60" />
@@ -55,7 +55,7 @@ const Index = () => {
 
 
         <div className="flex flex-col w-full separacion-section-info">
-          <span className="titulos-informacion">Programming Languages</span>
+          <span className="subtitulos">Programming Languages</span>
           <BarraProgreso nombre="Html" porcentaje="90" />
           <BarraProgreso nombre="CSS" porcentaje="85" />
           <BarraProgreso nombre="Js" porcentaje="80" />
@@ -66,7 +66,7 @@ const Index = () => {
 
 
         <div className="flex flex-col separacion-section-info w-full">
-          <span className="titulos-informacion">Extra Skills</span>
+          <span className="subtitulos">Extra Skills</span>
 
           <Habilidades
             Icono={PiIntersectSquareFill}
@@ -125,14 +125,17 @@ const Index = () => {
         </div>
 
 
-<div className="grid grid-cols-3 grid-rows-3 gap-6 w-full h-1/2">
+<div className="grid debug grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
 
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
-  <Conocimientos Icono={ImYoutube} titulo="Hola" detalles="Detalles"/>
+  <Conocimientos rutaImagen="/1-Monitor2.svg" titulo="Web Development" detalles="Blog, R-Commerce"/>
+      
+  <Conocimientos rutaImagen="/2-Monitor-diseno.svg" titulo="UI/UX Design" detalles="Mobile App, Website Design"/>
+  <Conocimientos rutaImagen="/3-Microphone.svg" titulo="Sound Design" detalles="Voice Over, Beat Making"/>
+  <Conocimientos rutaImagen="/4-Diseno.svg" titulo="Game Design" detalles="Character Design, Props & Objects"/>
+  <Conocimientos rutaImagen="/5-Persona.svg" titulo="Photography" detalles="Portrait, Product Photography"/>
+  <Conocimientos titulo="Advertising" detalles="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi"
+  textoBoton="Order by"/>
+
 </div>
 
 
