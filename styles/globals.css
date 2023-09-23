@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -20,15 +21,15 @@
 }
 
 .texto-normal-gris{
-  @apply font-normal text-xl text-slate-500;
+  @apply font-normal text-base text-slate-500;
 }
 
 .texto-normal-negro{
-  @apply font-normal text-xl;
+  @apply font-normal text-base;
 }
 
 .separacion-section-info{
-  @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-800;
+  @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-300;
 }
 
 .titulos-informacion{

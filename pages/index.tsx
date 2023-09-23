@@ -14,10 +14,10 @@ import { Conocimientos } from "@/componentes/Conocimientos";
 
 const Index = () => {
   return (
-    <main className="flex gap-7 bg-slate-200">
+    <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center">
 
 
-      <aside className="w-80 px-10 bg-white">
+      <aside className="w-[305px] px-10 bg-white">
         <div className="flex flex-col items-center separacion-section-info">
           <Image
             className="rounded-full"
@@ -88,7 +88,7 @@ const Index = () => {
 
 
 
-      <section className="debug w-3/5">
+      <section className="debug w-[970px] h-[467]">
         <div className="gap-9 flex flex-row bg-white rounded-sm">
           <div className="flex flex-col gap-9 w-2/3 p-11">
             <h1 className="text-5xl font-bold">
