@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ImFacebook, ImLinkedin2, ImYoutube, ImDribbble } from "react-icons/im";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { PiIntersectSquareFill } from "react-icons/pi";
+import { IoIosArrowForward } from "react-icons/io";
 
 //Componentes
 import { BotonRedes } from "@/componentes/BotonRedes";
@@ -11,13 +12,11 @@ import { Habilidades } from "@/componentes/Habilidades";
 import { EntradasEncabezado } from "@/componentes/Encabezado";
 import { Conocimientos } from "@/componentes/Conocimientos";
 import { Certificados } from "@/componentes/Certificados";
-
+import { Proyecto } from "@/componentes/Proyectos";
 
 const Index = () => {
   return (
     <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center">
-
-
       <aside className="w-[305px] px-10 bg-white">
         <div className="flex flex-col items-center separacion-section-info">
           <Image
@@ -32,8 +31,6 @@ const Index = () => {
           <p className="texto-normal-gris">Front-End Developer</p>
         </div>
 
-
-
         <div className="flex flex-col items-center separacion-section-info w-full">
           <TextoInformacion nombreInfo="Age:" valorInfo="24" />
           <TextoInformacion nombreInfo="Residence:" valorInfo="BD" />
@@ -44,16 +41,12 @@ const Index = () => {
           />
         </div>
 
-
-
         <div className="flex flex-col w-full  separacion-section-info">
           <span className="subtitulos">Languages</span>
           <BarraProgreso nombre="Bangla" porcentaje="100" />
           <BarraProgreso nombre="English" porcentaje="80" />
           <BarraProgreso nombre="Spanish" porcentaje="60" />
         </div>
-
-
 
         <div className="flex flex-col w-full separacion-section-info">
           <span className="subtitulos">Programming Languages</span>
@@ -63,8 +56,6 @@ const Index = () => {
           <BarraProgreso nombre="PHP" porcentaje="75" />
           <BarraProgreso nombre="WordPress" porcentaje="85" />
         </div>
-
-
 
         <div className="flex flex-col separacion-section-info w-full">
           <span className="subtitulos">Extra Skills</span>
@@ -84,6 +75,8 @@ const Index = () => {
           <Habilidades Icono={PiIntersectSquareFill} texto="GIT Knowledge" />
         </div>
       </aside>
+
+
 
 
 
@@ -125,72 +118,130 @@ const Index = () => {
           />
         </div>
 
+        <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
+          <Conocimientos
+            rutaImagen="/1-Monitor2.svg"
+            titulo="Web Development"
+            detalles="Blog, R-Commerce"
+          />
 
-      <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
-
-        <Conocimientos rutaImagen="/1-Monitor2.svg" titulo="Web Development" detalles="Blog, R-Commerce"/>
-            
-        <Conocimientos rutaImagen="/2-Monitor-diseno.svg" titulo="UI/UX Design" detalles="Mobile App, Website Design"/>
-        <Conocimientos rutaImagen="/3-Microphone.svg" titulo="Sound Design" detalles="Voice Over, Beat Making"/>
-        <Conocimientos rutaImagen="/4-Diseno.svg" titulo="Game Design" detalles="Character Design, Props & Objects"/>
-        <Conocimientos rutaImagen="/5-Persona.svg" titulo="Photography" detalles="Portrait, Product Photography"/>
-        <Conocimientos titulo="Advertising" detalles="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi"
-        textoBoton="Order by"/>
-
-      </div>
-
-
-
-      <section>
-
-
-        <div className="py-16 px-64 text-center bg-inherit">
-          <EntradasEncabezado
-            titulo="Education"
-            descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+          <Conocimientos
+            rutaImagen="/2-Monitor-diseno.svg"
+            titulo="UI/UX Design"
+            detalles="Mobile App, Website Design"
+          />
+          <Conocimientos
+            rutaImagen="/3-Microphone.svg"
+            titulo="Sound Design"
+            detalles="Voice Over, Beat Making"
+          />
+          <Conocimientos
+            rutaImagen="/4-Diseno.svg"
+            titulo="Game Design"
+            detalles="Character Design, Props & Objects"
+          />
+          <Conocimientos
+            rutaImagen="/5-Persona.svg"
+            titulo="Photography"
+            detalles="Portrait, Product Photography"
+          />
+          <Conocimientos
+            titulo="Advertising"
+            detalles="Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi"
+            textoBoton="Order by"
           />
         </div>
 
-<section className="flex flex-col px-10 bg-white rounded-sm">
-  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
-
-  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
-
-  <Certificados titulo1="University Of Toronto" descripcion1="Student" fecha="Jan 1016 ~ Dec 2021" titulo2="Certificate of web training" descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."/>
 
 
 
-</section>
-        
 
-  
-        <div className="py-16 px-64 text-center bg-inherit">
-          <EntradasEncabezado
-            titulo="Portafolio"
-            descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
-          />
-        </div>
+
 
         <section>
+          <div className="py-16 px-64 text-center bg-inherit">
+            <EntradasEncabezado
+              titulo="Education"
+              descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+            />
+          </div>
+
+          <section className="flex flex-col px-10 bg-white rounded-sm">
+            <Certificados
+              titulo1="University Of Toronto"
+              descripcion1="Student"
+              fecha="Jan 1016 ~ Dec 2021"
+              titulo2="Certificate of web training"
+              descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
+            />
+
+            <Certificados
+              titulo1="University Of Toronto"
+              descripcion1="Student"
+              fecha="Jan 1016 ~ Dec 2021"
+              titulo2="Certificate of web training"
+              descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
+            />
+
+            <Certificados
+              titulo1="University Of Toronto"
+              descripcion1="Student"
+              fecha="Jan 1016 ~ Dec 2021"
+              titulo2="Certificate of web training"
+              descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
+            />
+          </section>
+
+          <div className="py-16 px-64 text-center bg-inherit">
+            <EntradasEncabezado
+              titulo="Portafolio"
+              descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+            />
+          </div>
 
 
-          
+
+
+          <section className="flex gap-8">
+
+            <Proyecto titulo="How To Make Web Tempates"
+            descripcion="Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+            Nulla Diam In Ac Dictum A Urna"
+            textoBoton="Ver mas"
+            Icono={IoIosArrowForward}/>
+
+            <Proyecto titulo="How To Make Web Tempates"
+            descripcion="Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+            Nulla Diam In Ac Dictum A Urna"
+           
+            Icono={IoIosArrowForward}/> 
+
+            <Proyecto titulo="Web Tempates"
+            descripcion="Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+            Nulla Diam In Ac Dictum A Urna"
+            textoBoton="Click acá"
+           
+            Icono={IoIosArrowForward}/>
+
+
+
+          </section>
+
+
+          <section>
+
+          <div className="py-16 px-64 text-center bg-inherit">
+            <EntradasEncabezado
+              titulo="Portafolio"
+              descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+            />
+          </div>
+
+          </section>
         </section>
-
-
-
-
       </section>
 
 
-
-
-
-
-
-
-
-      </section>
 
 
 

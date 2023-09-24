@@ -9,7 +9,6 @@ interface EntradasCertificados {
 const Certificados = ({ titulo1, descripcion1, fecha, titulo2, descripcion2 }: EntradasCertificados) => {
 
     return (
-
         <div className="flex justify-between border-b border-gray-200 border-solid w-[890px] h-[220px] py-10">
 
             <div className="flex flex-col w-5/12">
@@ -35,11 +34,8 @@ const Certificados = ({ titulo1, descripcion1, fecha, titulo2, descripcion2 }: E
                 <p className="texto-normal-gris">{descripcion2}</p>
 
             </div>
-
         </div>
-
     );
-
 }
 
 export {Certificados};
