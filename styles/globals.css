@@ -29,7 +29,7 @@
 }
 
 .separacion-section-info{
-  @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-300;
+  @apply gap-3 pt-7 pb-6 border-solid border-b border-gray-200;
 }
 
 .subtitulos{

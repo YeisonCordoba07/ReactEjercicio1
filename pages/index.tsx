@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { ImFacebook, ImLinkedin2, ImYoutube, ImDribbble } from "react-icons/im";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
@@ -14,9 +15,20 @@ import { Conocimientos } from "@/componentes/Conocimientos";
 import { Certificados } from "@/componentes/Certificados";
 import { Proyecto } from "@/componentes/Proyectos";
 
+
+
+
 const Index = () => {
   return (
-    <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center">
+    <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center relative">
+
+      
+      <div className="bg-amber-200 bg-amber-500 bg-white border-b border-gray-200 border-solid border-amber-500 flex flex-col font-semibold justify-between gap-2 gap-3 gap-4 gap-5 h-1 mr-4 h-3 h-[220px] h-[250px] items-center justify-between justify-center p-1 p-10 pb-5 pr-2 px-2 px-7 py-4 py-10 rounded-full rounded-l-full rounded-sm text-4xl text-amber-400 text-amber-500 text-lg text-white text-x text-xs texto-normal-negro uppercase w-1 w-5/12 w-7/12 w-[890px] absolute z-[-10] hidden w-[310px] h-[520px]"></div>
+
+
+
+
+
       <aside className="w-[305px] px-10 bg-white">
         <div className="flex flex-col items-center separacion-section-info">
           <Image
@@ -97,7 +109,7 @@ const Index = () => {
               suspendisse nunc lectus.
             </p>
 
-            <button className="bg-amber-500 w-40 h-14 rounded-md text-xl font-medium">
+            <button className="bg-amber-400 w-40 h-14 rounded-md text-xl font-medium">
               HIRE ME{" "}
             </button>
           </div>
@@ -247,8 +259,8 @@ const Index = () => {
 
 
 
-      <aside className="w-24 flex flex-col items-center pt-20 bg-white">
-        <span className="mb-4 text-lg font-bold">Links</span>
+      <aside className="w-24 flex flex-col items-center pt-10 bg-white">
+        <span className="mb-4 text-lg font-extrabold">Links</span>
 
         <ul className="flex flex-col justify-center gap-4">
           <li>
