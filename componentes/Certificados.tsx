@@ -18,8 +18,8 @@ const Certificados = ({ titulo1, descripcion1, fecha, titulo2, descripcion2 }: E
                 <div className="flex">
                     <p className="texto-normal-negro mr-4">{descripcion1}</p>
 
-                    <div className="flex bg-amber-500 justify-center items-center px-2">
-                        <span className="text-xs text-white">{fecha}</span>
+                    <div className="flex bg-amber-400 justify-center items-center px-2">
+                        <span className="text-xs font-bold text-white">{fecha}</span>
                     </div>
                     
                 </div>

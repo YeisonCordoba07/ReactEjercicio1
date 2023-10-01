@@ -25,7 +25,7 @@ const Conocimientos = ({ rutaImagen, titulo, detalles, textoBoton }: EntradasCon
 
             <span className="subtitulos">{titulo}</span>
 
-            <p className="texto-normal-gris">{detalles}</p>
+            <p className="texto-normal-gris text-center">{detalles}</p>
 
             <span style={{ display: nodisplay }} className="text-amber-500 font-bold text-x uppercase">
                 {textoBoton}{">"}

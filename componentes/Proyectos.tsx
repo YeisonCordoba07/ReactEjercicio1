@@ -2,18 +2,19 @@ import Image from "next/image";
 import { IconType } from "react-icons";
 
 interface EntradasProyecto{
+    imagen: string;
     titulo: string;
     descripcion: string;
     textoBoton?: string;
     Icono: IconType;
 }
 
-const Proyecto = ({titulo, descripcion, textoBoton, Icono}: EntradasProyecto) => {
+const Proyecto = ({imagen, titulo, descripcion, textoBoton, Icono}: EntradasProyecto) => {
     const textoB = textoBoton ? textoBoton: "Ver-mas"; 
     return (
 
         <article className="flex flex-col gap-2 w-[310px] h-[520px] bg-white items-center">
-        <Image src="/ImageP.png" alt="" width={310} height={300} />
+        <Image src={imagen} alt="" width={500} height={300} className="bg-cover"/>
 
         <div className="flex flex-col px-7  py-4 gap-3 justify-between">
           <h4 className="subtitulos">{titulo}</h4>
