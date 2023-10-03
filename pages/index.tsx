@@ -43,12 +43,12 @@ const Index = () => {
         </div>
 
         <div className="flex flex-col items-center separacion-section-info w-full">
-          <TextoInformacion nombreInfo="Correo:" valorInfo="correo@udea.edu.co" />
+          <TextoInformacion nombreInfo="Pais:" valorInfo="Colombia" />
           <TextoInformacion nombreInfo="Ciudad:" valorInfo="Medellín" />
           <TextoInformacion nombreInfo="Freelance:" valorInfo="Disponible" />
           <TextoInformacion
             nombreInfo="Celular:"
-            valorInfo="312-123-4567"
+            valorInfo="312 123 4567"
           />
         </div>
 
@@ -169,7 +169,7 @@ const Index = () => {
           <Conocimientos
             titulo="Otros"
             detalles="Otros conocimientos y habilidades"
-            textoBoton="Ver mas"
+            textoEnlace="Ver mas"
           />
         </div>
 
@@ -234,21 +234,16 @@ const Index = () => {
             <Proyecto imagen="/correos.jpg"
             titulo="Página de correos"
             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-            textoBoton="Ver mas"
-            Icono={IoIosArrowForward}/>
+            textoEnlace="Ver mas"/>
 
             <Proyecto imagen="/mercadolibre.jpg"
             titulo="Página de Mercado Libre"
-            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-           
-            Icono={IoIosArrowForward}/> 
+            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."/> 
 
             <Proyecto imagen="/masterclass.PNG"
             titulo="Página de Master Class"
             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-            textoBoton="Click acá"
-           
-            Icono={IoIosArrowForward}/>
+            textoEnlace="Click acá"/>
 
 
 

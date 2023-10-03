@@ -1,17 +1,19 @@
 import Image from "next/image";
+import { IconType } from "react-icons";
+import { EnlaceVerMas } from "./EnlaceVerMas";
 
 interface EntradasConocimientos {
     rutaImagen?: string;
     titulo: string;
     detalles: string;
-    textoBoton?: string;
+    textoEnlace?: string;
 }
 
-const Conocimientos = ({ rutaImagen, titulo, detalles, textoBoton }: EntradasConocimientos) => {
+const Conocimientos = ({ rutaImagen, titulo, detalles, textoEnlace }: EntradasConocimientos) => {
 
     const ruta = rutaImagen ? rutaImagen : "";
     const display = ruta ? "block" : "none";
-    const nodisplay = display == "none" ? "block" : "none";
+    const mostrar = textoEnlace ? true : false;
 
     return (
 
@@ -27,9 +29,7 @@ const Conocimientos = ({ rutaImagen, titulo, detalles, textoBoton }: EntradasCon
 
             <p className="texto-normal-gris text-center">{detalles}</p>
 
-            <span style={{ display: nodisplay }} className="text-amber-500 font-bold text-x uppercase">
-                {textoBoton}{">"}
-            </span>
+            {mostrar && <EnlaceVerMas  textoEnlace={textoEnlace} />}
 
         </div>
     );
