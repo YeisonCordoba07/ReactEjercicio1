@@ -24,10 +24,10 @@ const Proyecto = ({imagen, titulo, descripcion, textoBoton, Icono}: EntradasProy
           </p>
 
           <a
-            className="text-amber-400 text-lg flex items-center"
+            className="text-amber-400 text-lg flex items-center hover:text-amber-600 w-fit"
             href="#"
           >
-            <span className="font-semibold items-center pr-2">
+            <span className="font-semibold items-center pr-2 ">
               {textoB}
             </span>
             <Icono />

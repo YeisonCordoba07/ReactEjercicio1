@@ -23,7 +23,7 @@ const Index = () => {
     <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center relative">
 
       {/* Parcha un problema con react o tailwind sobre no cargar algunos atribujos css de los componentes */}
-      <div className="bg-amber-200 bg-amber-500 bg-white border-b border-gray-200 border-solid border-amber-500 flex flex-col font-semibold justify-between gap-2 gap-3 gap-4 gap-5 h-1 mr-4 h-3 h-[220px] h-[250px] items-center justify-between justify-center p-1 p-10 pb-5 pr-2 px-2 px-7 py-4 py-10 rounded-full rounded-l-full rounded-sm text-4xl text-amber-400 text-amber-500 text-lg text-white text-x text-xs texto-normal-negro uppercase w-1 w-5/12 w-7/12 w-[890px] absolute z-[-10] hidden w-[310px] h-[520px] hover:scale-125 bg-cover"></div>
+      <div className="bg-amber-200 bg-amber-500 bg-white border-b border-gray-200 border-solid border-amber-500 flex flex-col font-semibold justify-between gap-2 gap-3 gap-4 gap-5 h-1 mr-4 h-3 h-[220px] h-[250px] items-center justify-between justify-center p-1 p-10 pb-5 pr-2 px-2 px-7 py-4 py-10 rounded-full rounded-l-full rounded-sm text-4xl text-amber-400 text-amber-500 text-lg text-white text-x text-xs texto-normal-negro uppercase w-1 w-5/12 w-7/12 w-[890px] absolute z-[-10] hidden w-[310px] h-[520px] hover:scale-125 bg-cover hover:text-amber-500 inline-block w-fit "></div>
 
 
 
@@ -40,7 +40,6 @@ const Index = () => {
 
           <span className="text-lg font-medium">Yeison Cordoba</span>
           <p className="texto-normal-gris text-center">Estudiante de Ingeniería de Sistemas</p>
-          <p className="texto-normal-gris text-center">Universidad de Antioquia</p>
         </div>
 
         <div className="flex flex-col items-center separacion-section-info w-full">
@@ -119,8 +118,8 @@ const Index = () => {
               Me gusta el desarrollo web, he creado diferentes páginas. Tengo habilidades en edición de videos e imagenes, creación de objetos en 3d y creación de videojuegos.
             </p>
 
-            <button className="flex justify-center items-center bg-amber-400 w-40 h-14 rounded-md hover:bg-amber-500 hover:scale-110">
-              <span className="text-xl font-medium mr-2 uppercase">Click me</span><ImArrowRight2/>{" "}
+            <button className="flex justify-center items-center bg-amber-400 w-40 h-14 rounded-md hover:bg-amber-500 hover:scale-110 hover:duration-300">
+              <span className="text-xl font-medium mr-2 uppercase ">Click me</span><ImArrowRight2/>{" "}
             </button>
           </div>
 
@@ -282,7 +281,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={ImFacebook}
-              enlace="#"
+              enlace="https://www.facebook.com/"
               colorFondo="rgb(59 130 246)"
             />
           </li>
@@ -290,7 +289,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={BsInstagram}
-              enlace="#"
+              enlace="https://www.instagram.com/"
               colorFondo="rgb(240 171 252)"
             />
           </li>
@@ -298,7 +297,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={BsTwitter}
-              enlace="#"
+              enlace="https://www.x.com/"
               colorFondo="rgb(56 189 248)"
             />
           </li>
@@ -306,7 +305,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={ImLinkedin2}
-              enlace="#"
+              enlace="https://www.linkedin.com/"
               colorFondo="rgb(14 116 144)"
             />
           </li>
@@ -314,7 +313,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={ImYoutube}
-              enlace="#"
+              enlace="https://www.youtube.com/"
               colorFondo="rgb(220 38 38)"
             />
           </li>
@@ -322,7 +321,7 @@ const Index = () => {
           <li>
             <BotonRedes
               Icono={ImDribbble}
-              enlace="#"
+              enlace="https://www.dribbble.com/"
               colorFondo="rgb(249 115 22)"
             />
           </li>
