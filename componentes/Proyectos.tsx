@@ -6,23 +6,28 @@ interface EntradasProyecto {
   titulo: string;
   descripcion: string;
   textoEnlace?: string;
+  enlace?: string;
 }
 
-const Proyecto = ({ imagen, titulo, descripcion, textoEnlace}: EntradasProyecto) => {
+const Proyecto = ({ imagen, titulo, descripcion, textoEnlace, enlace}: EntradasProyecto) => {
   const textoE = textoEnlace ? textoEnlace : "Ver-mas";
+ 
   return (
 
-    <article className="flex flex-col gap-2 w-[310px] h-[520px] bg-white items-center">
-      <Image src={imagen} alt="" width={500} height={300} className="bg-cover" />
+    <article className="flex flex-col gap-2 w-[310px] h-[474px] bg-white items-center overflow-hidden">
+      <a href={enlace}>
+      <Image src={imagen} alt="" width={310} height={300} className="bg-cover hover:brightness-75 hover:duration-300 hover:scale-110" />
+      </a>
 
-      <div className="flex flex-col px-7  py-4 gap-3 justify-between">
+
+      <div className="flex flex-col px-7  py-4 gap-4 justify-between">
         <h4 className="subtitulos">{titulo}</h4>
 
-        <p className="texto-normal-gris">
+        <p className="texto-normal-gris h-16 ">
           {descripcion}
         </p>
 
-        <EnlaceVerMas  textoEnlace={textoE} />
+        <EnlaceVerMas textoEnlace={textoE} enlace={enlace} />
       </div>
     </article>
 
