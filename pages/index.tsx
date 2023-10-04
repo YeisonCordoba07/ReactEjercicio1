@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ImFacebook, ImLinkedin2, ImYoutube, ImDribbble, ImArrowRight2 } from "react-icons/im";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { PiIntersectSquareFill } from "react-icons/pi";
-import { IoIosArrowForward } from "react-icons/io";
 
 //Componentes
 import { BotonRedes } from "@/componentes/BotonRedes";
@@ -14,11 +13,21 @@ import { EntradasEncabezado } from "@/componentes/Encabezado";
 import { Conocimientos } from "@/componentes/Conocimientos";
 import { Certificados } from "@/componentes/Certificados";
 import { Proyecto } from "@/componentes/Proyectos";
+import { Dialogo } from "@/componentes/dialogos/Dialogo";
+import { useState } from "react";
 
 
 
 
 const Index = () => {
+
+
+  const [cambiarDialogo, setCambiarDialogo] = useState<boolean>(false)
+
+  const abrirDialogo = () =>{
+    setCambiarDialogo(true);
+  }
+
   return (
     <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center relative">
 
@@ -171,6 +180,7 @@ const Index = () => {
             titulo="Otros"
             detalles="Otros conocimientos y habilidades"
             textoEnlace="Ver mas"
+            abrirDialogo={abrirDialogo}
           />
         </div>
 
@@ -236,18 +246,21 @@ const Index = () => {
             titulo="Página de correos"
             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
             textoEnlace="Ver mas"
-            enlace="#"/>
+            enlace="#"
+            abrirDialogo={abrirDialogo}/>
 
             <Proyecto imagen="/mercadolibre.jpg"
             titulo="Página de Mercado Libre"
             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-            enlace="#"/> 
+            enlace="#"
+            abrirDialogo={abrirDialogo}/> 
 
             <Proyecto imagen="/masterclass.PNG"
             titulo="Página de Master Class"
             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
             textoEnlace="Click acá"
-            enlace="#"/>
+            enlace="#" 
+            abrirDialogo={abrirDialogo}/>
 
 
 
@@ -326,6 +339,7 @@ const Index = () => {
           </li>
         </ul>
       </aside>
+      <Dialogo open={cambiarDialogo} setCerrarDialogo={setCambiarDialogo}/>
     </main>
   );
 };

@@ -7,9 +7,10 @@ interface EntradasConocimientos {
     titulo: string;
     detalles: string;
     textoEnlace?: string;
+    abrirDialogo?:() => void;
 }
 
-const Conocimientos = ({ rutaImagen, titulo, detalles, textoEnlace }: EntradasConocimientos) => {
+const Conocimientos = ({ rutaImagen, titulo, detalles, textoEnlace, abrirDialogo = () => {}}: EntradasConocimientos) => {
 
     const ruta = rutaImagen ? rutaImagen : "";
     const display = ruta ? "block" : "none";
@@ -29,7 +30,7 @@ const Conocimientos = ({ rutaImagen, titulo, detalles, textoEnlace }: EntradasCo
 
             <p className="texto-normal-gris text-center">{detalles}</p>
 
-            {mostrar && <EnlaceVerMas  textoEnlace={textoEnlace} />}
+            {mostrar && <EnlaceVerMas  textoEnlace={textoEnlace} abrirDialogo={abrirDialogo}/>}
 
         </div>
     );

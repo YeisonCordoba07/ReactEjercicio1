@@ -7,9 +7,10 @@ interface EntradasProyecto {
   descripcion: string;
   textoEnlace?: string;
   enlace?: string;
+  abrirDialogo: () => void;
 }
 
-const Proyecto = ({ imagen, titulo, descripcion, textoEnlace, enlace}: EntradasProyecto) => {
+const Proyecto = ({ imagen, titulo, descripcion, textoEnlace, enlace, abrirDialogo = () => {}}: EntradasProyecto) => {
   const textoE = textoEnlace ? textoEnlace : "Ver-mas";
  
   return (
@@ -27,7 +28,7 @@ const Proyecto = ({ imagen, titulo, descripcion, textoEnlace, enlace}: EntradasP
           {descripcion}
         </p>
 
-        <EnlaceVerMas textoEnlace={textoE} enlace={enlace} />
+        <EnlaceVerMas textoEnlace={textoE} enlace={enlace} abrirDialogo={abrirDialogo}/>
       </div>
     </article>
 
