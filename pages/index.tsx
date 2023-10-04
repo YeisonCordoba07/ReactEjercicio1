@@ -1,8 +1,9 @@
 
 import Image from "next/image";
 import { ImFacebook, ImLinkedin2, ImYoutube, ImDribbble, ImArrowRight2 } from "react-icons/im";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 import { PiIntersectSquareFill } from "react-icons/pi";
+
 
 //Componentes
 import { BotonRedes } from "@/componentes/BotonRedes";
@@ -32,7 +33,7 @@ const Index = () => {
     <main className="flex gap-7 bg-slate-200 m-auto w-[1440px] justify-center relative">
 
       {/* Parcha un problema con react o tailwind sobre no cargar algunos atribujos css de los componentes */}
-      <div className="bg-amber-200 bg-amber-500 bg-white border-b border-gray-200 border-solid border-amber-500 flex flex-col font-semibold justify-between gap-2 gap-3 gap-4 gap-5 h-1 mr-4 h-3 h-[220px] h-[250px] items-center justify-between justify-center p-1 p-10 pb-5 pr-2 px-2 px-7 py-4 py-10 rounded-full rounded-l-full rounded-sm text-4xl text-amber-400 text-amber-500 text-lg text-white text-x text-xs texto-normal-negro uppercase w-1 w-5/12 w-7/12 w-[890px] absolute z-[-10] hidden w-[310px] h-[520px] hover:scale-125 bg-cover hover:text-amber-500 inline-block w-fit hover:duration-200 hover:text-amber-600 h-16  m  t-2 hover:brightness-75 overflow-hidden"></div>
+      <div className="bg-amber-200 bg-amber-500 bg-white border-b border-gray-200 border-solid border-amber-500 flex flex-col font-semibold justify-between gap-2 gap-3 gap-4 gap-5 h-1 mr-4 h-3 h-[220px] h-[250px] items-center justify-between justify-center p-1 p-10 pb-5 pr-2 px-2 px-7 py-4 py-10 rounded-full rounded-l-full rounded-sm text-4xl text-amber-400 text-amber-500 text-lg text-white text-x text-xs texto-normal-negro uppercase w-1 w-5/12 w-7/12 w-[890px] absolute z-[-10] hidden w-[310px] h-[520px] hover:scale-125 bg-cover hover:text-amber-500 inline-block w-fit hover:duration-200 hover:text-amber-600 h-16  m  t-2 hover:brightness-75 overflow-hidden w-[500px] h-[500px] bg-red-600 px-2 py-2 absolute relative bottom-2 right-2 top-2 w-96 h-96 h-fit text-2xl"></div>
 
 
 
@@ -292,6 +293,13 @@ const Index = () => {
         <ul className="flex flex-col justify-center gap-4">
           <li>
             <BotonRedes
+              Icono={BsGithub}
+              enlace="https://www.github.com/YeisonCordoba07"
+              colorFondo="rgb(155 155 155)"
+            />
+          </li>
+          <li>
+            <BotonRedes
               Icono={ImFacebook}
               enlace="https://www.facebook.com/"
               colorFondo="rgb(59 130 246)"
@@ -338,6 +346,7 @@ const Index = () => {
             />
           </li>
         </ul>
+        
       </aside>
       <Dialogo open={cambiarDialogo} setCerrarDialogo={setCambiarDialogo}/>
     </main>
