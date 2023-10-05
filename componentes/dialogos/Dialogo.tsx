@@ -27,7 +27,7 @@ const Dialogo = ({ open, setCerrarDialogo }: EntradasDialogo) => {
 
             <DialogContent className="">
                 
-                <div className="flex flex-col justify-center items-center p-5">
+                <div className="flex flex-col justify-center items-center p-7">
                     {/*<EnlaceVerMas abrirDialogo={() => {setCerrarDialogo(false)}}/>*/}
                     <a href="https://www.github.com/YeisonCordoba07">
 
