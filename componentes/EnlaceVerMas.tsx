@@ -1,26 +1,28 @@
-import {IconType} from "react-icons";
+import { IconType } from "react-icons";
 import { IoIosArrowForward } from "react-icons/io";
 
-interface EnlaceVerMas{
-    textoEnlace?: string;
-    enlace?: string;
+interface EnlaceVerMas {
+  textoEnlace?: string;
+  enlace?: string;
+  abrirDialogo: () => void;
 }
 
-const EnlaceVerMas = ({textoEnlace, enlace}:EnlaceVerMas) =>{
-    const auxTextoEnlace = textoEnlace ? textoEnlace: "Ver-mas";
-    const auxEnlace = enlace ? enlace : "#";
-    return (
-        <a
-        className="text-amber-400 text-lg flex items-center hover:text-amber-600 w-fit"
-        href={auxEnlace}
-      >
-        <span className="font-semibold items-center pr-2 ">
-          {textoEnlace}
-        </span>
-        <IoIosArrowForward />
-      </a>
-    );
+const EnlaceVerMas = ({ textoEnlace, enlace, abrirDialogo = () => { } }: EnlaceVerMas) => {
+  const auxTextoEnlace = textoEnlace ? textoEnlace : "Ver-mas";
+  const auxEnlace = enlace ? enlace : "#";
+
+  return (
+    <button onClick={abrirDialogo}
+      className="text-amber-400 text-lg flex items-center hover:text-amber-600 w-fit">
+
+      <span className="font-semibold items-center pr-2 ">
+        {textoEnlace}
+      </span>
+
+      <IoIosArrowForward />
+    </button>
+  );
 }
 
 
-export {EnlaceVerMas};
+export { EnlaceVerMas };
