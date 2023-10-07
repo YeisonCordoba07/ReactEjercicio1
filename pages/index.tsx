@@ -55,7 +55,7 @@ const Index = () => {
                             Me gusta el desarrollo web, he creado diferentes páginas. Tengo habilidades en edición de videos e imagenes, creación de objetos en 3d y creación de videojuegos.
                         </p>
 
-                        <button className="flex justify-center items-center bg-amber-400 w-40 h-14 rounded-md hover:bg-amber-500 hover:scale-110 hover:duration-300">
+                        <button onClick={abrirDialogo} className="flex justify-center items-center bg-amber-400 w-40 h-14 rounded-md hover:bg-amber-500 hover:scale-110 hover:duration-300">
                             <span className="text-xl font-medium mr-2 uppercase ">Click me</span><ImArrowRight2 />{" "}
                         </button>
                     </div>
