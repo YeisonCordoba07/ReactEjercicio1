@@ -29,7 +29,7 @@ const Dialogo = ({ open, setCerrarDialogo }: EntradasDialogo) => {
                 
                 <div className="flex flex-col justify-center items-center p-7">
                     {/*<EnlaceVerMas abrirDialogo={() => {setCerrarDialogo(false)}}/>*/}
-                    <a href="https://www.github.com/YeisonCordoba07">
+                    <a target="_blank" href="https://www.github.com/YeisonCordoba07">
 
                         <Image src="/githubLogo.png" alt="" width={210} height={200} className="hover:duration-300 hover:scale-110 " />
                     </a>

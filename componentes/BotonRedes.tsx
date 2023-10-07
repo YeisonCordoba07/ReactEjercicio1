@@ -10,7 +10,7 @@ interface ButtonProps {
     const fondo = colorFondo ? { backgroundColor: colorFondo } : {};
     return (
 
-        <a href={enlace} className='fondo-redes hover:scale-125 hover:duration-200' style={fondo}>
+        <a target="_blank" href={enlace} className='fondo-redes hover:scale-125 hover:duration-200' style={fondo}>
           <span ><Icono/></span>
         </a>
 
