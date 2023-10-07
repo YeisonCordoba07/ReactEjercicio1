@@ -48,7 +48,7 @@ const Index = () => {
                         </h1>
 
                         <p className="texto-normal-gris">
-                            Me gusta el desarrollo web, he creado diferentes páginas. Tengo habilidades en edición de videos e imagenes, creación de objetos en 3d y creación de videojuegos.
+                            Me gusta el desarrollo web, he creado diferentes paginas. Tengo habilidades en edicion de videos e imagenes, creación de objetos en 3d y creacion de videojuegos.
                         </p>
 
                         <button onClick={abrirDialogo} className="flex justify-center items-center bg-amber-400 w-40 h-14 rounded-md hover:bg-amber-500 hover:scale-110 hover:duration-300">
@@ -68,35 +68,35 @@ const Index = () => {
                 <div className="py-16 px-64 text-center bg-inherit">
                     <EntradasEncabezado
                         titulo="Conocimientos"
-                        descripcion="Estos son algunas de las habilidaes y conocimientos que he adquirido a traves de años."
+                        descripcion="Estos son algunas de las habilidades y conocimientos que he adquirido a traves de años."
                     />
                 </div>
 
                 <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full h-[550px]">
                     <Conocimientos
                         rutaImagen="/1-Monitor2.svg"
-                        titulo="Programación"
+                        titulo="Programacion"
                         detalles="Java, C#, Python"
                     />
 
                     <Conocimientos
                         rutaImagen="/2-Monitor-diseno.svg"
                         titulo="Desarrollo web"
-                        detalles="Página correos.es"
+                        detalles="Pagina correos.es"
                     />
                     <Conocimientos
                         rutaImagen="/3-Microphone.svg"
-                        titulo="Edición de video"
+                        titulo="Edicion de video"
                         detalles="Davinci Resolve"
                     />
                     <Conocimientos
                         rutaImagen="/4-Diseno.svg"
-                        titulo="Creación de videojuegos"
+                        titulo="Creacion de videojuegos"
                         detalles="Unity"
                     />
                     <Conocimientos
                         rutaImagen="/5-Persona.svg"
-                        titulo="Edición de imagenes"
+                        titulo="Edicion de imagenes"
                         detalles="Krita, Inkscape"
                     />
                     <Conocimientos
@@ -126,14 +126,14 @@ const Index = () => {
                             titulo1="Universidad de Antioquia"
                             descripcion1="Estudiante"
                             fecha="Enero 2017"
-                            titulo2="Estudiante Ingeniería de Sistemas"
+                            titulo2="Estudiante Ingenieria de Sistemas"
                             descripcion2="Estoy estudiando Ingeniería de Sistemas."
                         />
 
                         <Certificados
                             titulo1="University Of Toronto"
                             descripcion1="Student"
-                            fecha="Jan 1016 ~ Dec 2021"
+                            fecha="Jan 1016 - Dec 2021"
                             titulo2="Certificate of web training"
                             descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
                         />
@@ -141,7 +141,7 @@ const Index = () => {
                         <Certificados
                             titulo1="University Of Toronto"
                             descripcion1="Student"
-                            fecha="Jan 1016 ~ Dec 2021"
+                            fecha="Jan 1016 - Dec 2021"
                             titulo2="Certificate of web training"
                             descripcion2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
                         />
@@ -166,29 +166,29 @@ const Index = () => {
                     <section className="flex gap-8 overflow-auto">
 
                         <Proyecto imagen="/correos.jpg"
-                            titulo="Página de correos"
-                            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
+                            titulo="Pagina de correos"
+                            descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas paginas existentes."
                             textoEnlace="Ver mas"
                             enlace="https://desarrollowebejercicio7--yeisoncordoba07.repl.co/"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/mercadolibre.jpg"
-                            titulo="Página de Mercado Libre"
-                            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
+                            titulo="Pagina de Mercado Libre"
+                            descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas paginas existentes."
                             enlace="https://desarrollowebejercicio8--yeisoncordoba07.repl.co/"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/masterclass.PNG"
-                            titulo="Página de Master Class"
-                            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-                            textoEnlace="Click acá"
+                            titulo="Pagina de Master Class"
+                            descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas paginas existentes."
+                            textoEnlace="Click aca"
                             enlace="https://desarrollowebejercicio4.yeisoncordoba07.repl.co"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/masterclass.PNG"
-                            titulo="Página de Master Class"
-                            descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
-                            textoEnlace="Click acá"
+                            titulo="Pagina de Master Class"
+                            descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas paginas existentes."
+                            textoEnlace="Click aca"
                             enlace="https://desarrollowebejercicio4.yeisoncordoba07.repl.co"
                             abrirDialogo={abrirDialogo} />
 

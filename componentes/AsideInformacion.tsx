@@ -27,7 +27,7 @@ const AsideInformacion = () => {
                     />
 
                     <span className="text-lg font-medium">Yeison Cordoba</span>
-                    <p className="texto-normal-gris text-center">Estudiante de Ingeniería de Sistemas</p>
+                    <p className="texto-normal-gris text-center">Estudiante de Ingenieria de Sistemas</p>
                 </div>
 
                 <div className="flex flex-col items-center separacion-section-info w-full">
@@ -43,7 +43,7 @@ const AsideInformacion = () => {
                 </div>
 
                 <div className="flex flex-col w-full separacion-section-info">
-                    <span className="subtitulos">Lenguajes de Programación</span>
+                    <span className="subtitulos">Lenguajes de Programacion</span>
                     <BarraProgreso nombre="Html y CSS" porcentaje="80" />
                     <BarraProgreso nombre="C# y Java" porcentaje="70" />
 
