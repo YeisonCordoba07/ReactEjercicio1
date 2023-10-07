@@ -42,7 +42,7 @@ const Index = () => {
                 <div className="gap-9 flex flex-row bg-white rounded-sm">
                     <div className="flex flex-col gap-9 w-2/3 p-11">
                         <h1 className="text-5xl font-bold">
-                            I'm Yeison Cordoba{" "}
+                            I am Yeison Cordoba{" "}
                             <span className="text-amber-400 font-bold">Front-end</span>{" "}
                             Developer
                         </h1>

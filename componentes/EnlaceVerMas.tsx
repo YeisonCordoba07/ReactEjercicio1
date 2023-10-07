@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { IoIosArrowForward } from "react-icons/io";
 
 interface EnlaceVerMas {

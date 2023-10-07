@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { IconType } from "react-icons";
 import { EnlaceVerMas } from "./EnlaceVerMas";
 
 interface EntradasConocimientos {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from 'react';
+import React from "react";
 
 import { TextoInformacion } from "@/componentes/TextoInformacion";
 import { BarraProgreso } from "@/componentes/BarraProgreso";

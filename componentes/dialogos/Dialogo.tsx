@@ -1,6 +1,6 @@
 import { Dialog } from "@mui/material";
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
 import { Dispatch, SetStateAction } from "react";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
