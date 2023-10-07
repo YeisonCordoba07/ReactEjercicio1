@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import {ImArrowRight2 } from "react-icons/im";
+import { ImArrowRight2 } from "react-icons/im";
 
 
 //Componentes
@@ -36,7 +36,7 @@ const Index = () => {
 
 
 
-            <AsideInformacion/>
+            <AsideInformacion />
 
 
 
@@ -189,7 +189,7 @@ const Index = () => {
                             enlace="https://desarrollowebejercicio4.yeisoncordoba07.repl.co"
                             abrirDialogo={abrirDialogo} />
 
-<Proyecto imagen="/masterclass.PNG"
+                        <Proyecto imagen="/masterclass.PNG"
                             titulo="Página de Master Class"
                             descripcion="Un proyecto que hice para prácticar. Consiste en replicar algunas páginas existentes."
                             textoEnlace="Click acá"
@@ -199,28 +199,31 @@ const Index = () => {
                     </section>
 
 
-                    <section>
 
-                        <div className="py-16 px-64 text-center bg-inherit">
-                            <EntradasEncabezado
-                                titulo="Portafolio"
-                                descripcion="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
-                            />
-                        </div>
 
-                    </section>
+
+
+
+
                 </section>
+                
+                <footer className="w-[970px] h-20 bg-white rounded-sm flex justify-center items-center mt-12">
+                    <span className="subtitulos">Por Yeison Alexander Cordoba Mena</span>
+                </footer>
             </section>
 
 
 
 
-            <AsideRedesSociales/>
+            <AsideRedesSociales />
 
 
 
             <Dialogo open={cambiarDialogo} setCerrarDialogo={setCambiarDialogo} />
+
+
         </main>
+
     );
 };
 
