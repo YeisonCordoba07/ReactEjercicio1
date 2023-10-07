@@ -15,7 +15,7 @@ const Proyecto = ({ imagen, titulo, descripcion, textoEnlace, enlace, abrirDialo
  
   return (
 
-    <article className="flex flex-col gap-2 w-[310px] h-[474px] bg-white items-center overflow-hidden">
+    <article className="flex flex-col gap-2 w-[310px] h-[474px] bg-white items-center overflow-hidden min-w-[310px]">
       <a target="_blank" href={enlace}>
       <Image src={imagen} alt="" width={310} height={300} className="bg-cover hover:brightness-75 hover:duration-300 hover:scale-110" />
       </a>
