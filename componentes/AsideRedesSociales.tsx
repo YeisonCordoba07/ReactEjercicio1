@@ -35,6 +35,14 @@ const AsideRedesSociales = () => {
 
                     <li>
                         <BotonRedes
+                            Icono={ImLinkedin2}
+                            enlace="https://www.linkedin.com/in/yeison-alexander-c-7477b3242/"
+                            colorFondo="rgb(14 116 144)"
+                        />
+                    </li>
+
+                    <li>
+                        <BotonRedes
                             Icono={BsInstagram}
                             enlace="https://www.instagram.com/"
                             colorFondo="rgb(240 171 252)"
@@ -46,14 +54,6 @@ const AsideRedesSociales = () => {
                             Icono={BsTwitter}
                             enlace="https://www.x.com/"
                             colorFondo="rgb(56 189 248)"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={ImLinkedin2}
-                            enlace="https://www.linkedin.com/"
-                            colorFondo="rgb(14 116 144)"
                         />
                     </li>
 
