@@ -21,7 +21,7 @@ const AsideRedesSociales = () => {
                     <li>
                         <BotonRedes
                             Icono={BsGithub}
-                            enlace="https://www.github.com/YeisonCordoba07"
+                            enlace="https://github.com/YeisonCordoba07?tab=repositories"
                             colorFondo="rgb(155 155 155)"
                         />
                     </li>
@@ -38,38 +38,6 @@ const AsideRedesSociales = () => {
                             Icono={ImLinkedin2}
                             enlace="https://www.linkedin.com/in/yeison-alexander-c-7477b3242/"
                             colorFondo="rgb(14 116 144)"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={BsInstagram}
-                            enlace="https://www.instagram.com/"
-                            colorFondo="rgb(240 171 252)"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={BsTwitter}
-                            enlace="https://www.x.com/"
-                            colorFondo="rgb(56 189 248)"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={ImYoutube}
-                            enlace="https://www.youtube.com/"
-                            colorFondo="rgb(220 38 38)"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={ImDribbble}
-                            enlace="https://www.dribbble.com/"
-                            colorFondo="rgb(249 115 22)"
                         />
                     </li>
 
