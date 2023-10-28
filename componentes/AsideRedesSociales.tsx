@@ -1,7 +1,7 @@
 import { BotonRedes } from "@/componentes/BotonRedes";
 import { ImFacebook, ImLinkedin2, ImYoutube, ImDribbble } from "react-icons/im";
 import {SiReplit} from "react-icons/si";
-import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 
 
@@ -30,14 +30,6 @@ const AsideRedesSociales = () => {
                             Icono={SiReplit}
                             enlace="https://replit.com/@YeisonCordoba07"
                             colorFondo="#EE9322"
-                        />
-                    </li>
-
-                    <li>
-                        <BotonRedes
-                            Icono={ImLinkedin2}
-                            enlace="https://www.linkedin.com/in/yeison-alexander-c-7477b3242/"
-                            colorFondo="rgb(14 116 144)"
                         />
                     </li>
 
