@@ -169,27 +169,27 @@ const Index = () => {
                             titulo="Página de correos"
                             descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas páginas existentes."
                             textoEnlace="Ver mas"
-                            enlace="https://desarrollowebejercicio7--yeisoncordoba07.repl.co/"
+                            enlace="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio7/"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/mercadolibre.jpg"
                             titulo="Página de Mercado Libre"
                             descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas páginas existentes."
-                            enlace="https://desarrollowebejercicio8--yeisoncordoba07.repl.co/"
+                            enlace="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio8/"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/masterclass.PNG"
                             titulo="Página de Master Class"
                             descripcion="Un proyecto que hice para practicar. Consiste en replicar algunas páginas existentes."
                             textoEnlace="Click aca"
-                            enlace="https://desarrollowebejercicio4.yeisoncordoba07.repl.co"
+                            enlace="https://yeisoncordoba07.github.io/DesarrolloWebEjercicio4/"
                             abrirDialogo={abrirDialogo} />
 
                         <Proyecto imagen="/automatadepila2.jpg"
                             titulo="Automata de pila"
                             descripcion="Automa que acepta lenguaje de la forma {a (b^n) c (b^n) / n >= 0}."
                             textoEnlace="Click aca"
-                            enlace="https://l5-automatadepila--yeisoncordoba07.repl.co/"
+                            enlace="https://l7-calculadora-simple.vercel.app/"
                             abrirDialogo={abrirDialogo} />
 
                     </section>
