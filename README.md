@@ -1,3 +1,7 @@
+# Resultado
+![react-ejercicio1-pi-vercel-app](https://github.com/YeisonCordoba07/ReactEjercicio1/assets/41711172/a8c288ac-96a2-4964-b144-f171c2d75a56)
+
+----
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
